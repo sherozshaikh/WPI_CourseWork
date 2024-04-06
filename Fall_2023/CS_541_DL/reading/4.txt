@@ -1,0 +1,51 @@
+Reading 4 - DL book - Chapters 7 & 8
+
+https://www.deeplearningbook.org/
+
+
+While going through the literature, below are the points that I found most powerful.
+
+
+1. L2 Parameter Regularization is one of the simplest and most common kinds of parameter norm penalty, commonly known as weight decay/ridge regression/ Tikhonov regularization.
+
+2. Describes how large eigenvalues have less relative regularization effect and vice versa. In directions that do not contribute to reducing the objective function, a small eigenvalue of the Hessian tells us that movement in this direction will not signiﬁcantly increase the gradient. Components of the weight vector corresponding to such unimportant directions are decayed away through the use of regularization throughout training.
+
+3. In comparison to L2 regularization, L1 regularization results in a solution that is more sparse. Sparsity in this context refers to the fact that some parameters have an optimal value of zero. The sparsity of L1 regularization is a qualitatively different behavior than arises with L2 regularization. The sparsity property induced by L1 regularization has been used extensively as a feature selection mechanism.
+
+4. Dead units in Neural Network - These are units that do not contribute much to the behavior of the function learned by the network because the weights going into or out of them are all very small.
+
+5. Explicit constraints implemented by reprojection can work much better in these cases because they do not encourage the weights to approach the origin. Explicit constraints implemented by reprojection have an effect only when the weights become large and attempt to leave the constraint region.
+
+6. How Dataset augmentation is a powerful technique to create fake data when data is limited (eg. object recognition). Operations, such as rotating the image or scaling the image, have proved quite effective. It is also effective for speech recognition tasks as well. Injecting noise in the input to a neural network can also be seen as a form of data augmentation.
+
+7. Noise applied to the inputs as a dataset augmentation strategy. Noise applied to the hidden units is such an important topic that the dropout algorithm is the main development of that approach.
+
+8. Injecting Noise at the Output Targets - Label smoothing regularizes a model based on a softmax with k output values by replacing the hard 0 and 1 classification targets. The standard cross-entropy loss may then be used with these soft targets. Maximum likelihood learning with a softmax classifier and hard targets may actually never converge the softmax can never predict a probability of exactly 0 or exactly 1, so it will continue to learn larger and larger weights, making more extreme predictions forever. It is possible to prevent this scenario using other regularization strategies like weight decay.
+
+9. Introduces the concept of Multitask learning and defines Task-specific parameters (which only benefit from the examples of their task to achieve good generalization - These are the upper layers of the neural network) and Generic parameters (shared across all the tasks (which benefit from the pooled data of all the tasks - These are the lower layers of the neural network).
+
+10. Introduces the concept of early stopping by defining it as probably the most commonly used form of regularization in deep learning due to both its effectiveness and its simplicity. In the case of early stopping, we are controlling the effective capacity of the model by determining how many steps it can take to fit the training set. It is easy to use early stopping without damaging the learning dynamics. This is in contrast to weight decay, where one must be careful not to use too much weight decay and trap the network in a bad local minimum corresponding to a solution with pathologically small weights.
+
+11. Introduces the concept of parameter tying and sharing and describes how it was proposed by Lasserre et al. (2006), who regularized the parameters of one model, trained as a classifier in a supervised paradigm, to be close to the parameters of another model, trained in an unsupervised paradigm (to capture the distribution of the observed input data). The architectures were constructed such that many of the parameters in the classifier model could be paired with corresponding parameters in the unsupervised model. Describes parameter sharing as a way to force sets of parameters to be equal. In certain models such as the convolutional neural network, this can lead to a significant reduction in the memory footprint of the model.
+
+12. Bagging (short for bootstrap aggregating) is a technique for reducing generalization error by combining several models. The idea is to train several different models separately, and then have all the models vote on the output for test examples. This is an example of a general strategy in machine learning called model averaging. Techniques employing this strategy are known as ensemble methods.
+
+13. Model averaging is an extremely powerful and reliable method for reducing generalization error. Its use is usually discouraged when benchmarking algorithms for scientiﬁc papers because any machine learning algorithm can benefit substantially from model averaging at the price of increased computation and memory.
+
+14. Dropout provides a computationally inexpensive but powerful method of regularizing a broad family of models.
+
+15. A key insight (Hinton et al., 2012c) involved in dropout is that we can approximate p(ensemble) by evaluating p(y | x) in one model: the model with all units, but with the weights going out of unit i multiplied by the probability of including unit i. The motivation for this modiﬁcation is to capture the right expected value of the output from that unit. We call this approach the weight scaling inference rule and empirically it performs very well.
+
+16. Dropout boosting is designed to use exactly the same mask noise as traditional dropout but lacks its regularizing eﬀect. Dropout boosting trains the entire ensemble to jointly maximize the log-likelihood on the training set. In the same sense that traditional dropout is analogous to bagging, this approach is analogous to boosting.
+
+17. Introduces the concept of Tangent Distance, Tangent Prop, and Manifold Tangent Classiﬁer and states that the tangent distance algorithm requires the tangent vectors priori to the eﬀect of transformations, such as translation, rotation, and scaling in images. Tangent prop has been used not just for supervised learning but also in the context of reinforcement learning. Tangent propagation is closely related to dataset augmentation.
+
+18. Introduces the concept of Coordinate Descent where we minimize f (x) with respect to a single variable xi, then minimize it with respect to another variable xj, and so on, repeatedly cycling through all variables, we are guaranteed to arrive at a (local) minimum i.e optimize one coordinate at a time. More generally, block coordinate descent refers to minimizing with respect to a subset of the variables simultaneously. The term 'coordinate descent' is often used to refer to block coordinate descent as well as strictly individual coordinate descent.
+
+19. Introduces the concept of Polyak averaging which consists of averaging several points in the trajectory through parameter space visited by an optimization algorithm. The basic idea is that the optimization algorithm may leap back and forth across a valley several times without ever visiting a point near the bottom of the valley. The average of all the locations on either side should be close to the bottom of the valley though. When applying Polyak averaging to nonconvex problems, it is typical to use an exponentially decaying running average.
+
+20. The strategies that involve training simple models on simple tasks before confronting the challenge of training the desired model to perform the desired task are collectively known as pretraining. Those pretraining algorithms break supervised learning problems into other simpler supervised learning problems. This approach is known as greedy supervised pretraining. In general, pretraining may help both in terms of optimization and generalization.
+
+21. The FitNets approach begins by training a network that has low enough depth and great enough width (number of units per layer) to be easy to train. This network then becomes a teacher for a second network, designated the student.
+
+22. Curriculum learning is based on the idea of planning a learning process to begin by learning simple concepts and progress to learning more complex concepts that depend on these simpler concepts. This basic strategy was previously known to accelerate progress in animal training and in machine learning.

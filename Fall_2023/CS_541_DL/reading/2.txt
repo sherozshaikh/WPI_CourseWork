@@ -1,0 +1,10 @@
+Reading 2 - DL book - Chapter 2, 3, 4, 6
+
+https://www.deeplearningbook.org/
+
+
+While going through the literature, below are the points that I found most powerful.
+
+To stabilize the overflow and underflow problem in the softmax function by using a trick where we evaluate softmax (z). How to take the first derivative of a function to get the slope using which we can try to get to the global minimum. How a second derivative can be helpful while minimizing the cost function with negative curvature. Using the eigen decomposition of the Hessian matrix, we can examine the eigenvalues of the Hessian to determine whether the critical point is a local maximum, local minimum, or saddle point.
+Points explaining why the weight decay approach used for linear models is also directly applicable to deep neural networks and is among the most popular regularization strategies. How many objective functions other than the log-likelihood do not work as well with the softmax function and why the activation functions used to produce the output of the hidden units or the output units saturate and negative log-likelihood helps to avoid this problem for many models. How ReLU saturates which gave rise to extended versions of ReLU namely Leaky ReLU, and PReLU.
+How chain rule plays a major role in the evaluation of the derivative of the functions during backpropagation avoids repeating many common subexpressions in computational graphs by using table-ﬁlling strategy sometimes called dynamic programming instead of using the naive approach, where we might need to execute exponentially many nodes.

@@ -1,0 +1,105 @@
+Reading 3 - DL book - Chapters 6, 8 & 9
+
+https://www.deeplearningbook.org/
+
+
+While going through the literature, below are the points that I found most powerful (Key Learnings).
+
+1. To stabilize the overflow and underflow problem in the softmax function by using a trick where we evaluate softmax (z). How to take the first derivative of a function to get the slope using which we can try to get to the global minimum. How a second derivative can be helpful while minimizing the cost function with negative curvature. Using the eigen decomposition of the Hessian matrix, we can examine the eigenvalues of the Hessian to determine whether the critical point is a local maximum, local minimum, or saddle point.
+
+2. Points explaining why the weight decay approach used for linear models is also directly applicable to deep neural networks and is among the most popular regularization strategies. How many objective functions other than the log-likelihood do not work as well with the softmax function and why the activation functions used to produce the output of the hidden units or the output units saturate and negative log-likelihood helps to avoid this problem for many models.
+
+3. How ReLU saturates which gave rise to extended versions of ReLU namely Leaky ReLU, and PReLU.
+
+4. How chain rule plays a major role in the evaluation of the derivative of the functions during backpropagation avoids repeating many common subexpressions in computational graphs by using table-ﬁlling strategy sometimes called dynamic programming instead of using the naive approach, where we might need to execute exponentially many nodes.
+
+5. How convolution reduces the number of parameters, which both reduces the memory requirements of the model and improves its statistical eﬃciency and computing the output requires fewer operations as compared to matrix multiplication.
+
+6. The parameter sharing used by the convolution operation means that rather than learning a separate set of parameters for every location, we learn only one set which does not aﬀect the runtime of forward propagation.
+
+7. Implementing a convolutional net as a fully connected net with an inﬁnitely strong prior would be extremely wasteful computationally. But thinking of a convolutional net as a fully connected net with an inﬁnitely strong prior can give us some insights into how convolutional nets work.
+
+8. When working with images, we usually think of the input and output of the convolution as being 3-D tensors, with one index into the diﬀerent channels and two indices into the spatial coordinates of each channel. Software implementations usually work in batch mode, so they will actually use 4-D tensors, with the fourth axis indexing diﬀerent examples in the batch.
+K - 4D Tensor
+i - output
+j - input
+k - row
+l - column
+
+9. Strides used for downsampling across each direction using and can be defined differently for each direction.
+
+10. Zero padding the input allows us to control the kernel width and the size of the output independently.
+
+11. If the input image has width m and the kernel has width k, the output will be of width m − k+ 1. The rate of this shrinkage can be dramatic if the kernels used are large. Since the shrinkage is greater than 0, it limits the number of convolutional layers that can be included in the network. As layers are added, the spatial dimension of the network will eventually drop to 1×1, at which point additional layers cannot meaningfully be considered convolutional.
+
+12. Valid convolution (no zero padding) - kernel allowed to visit position where it entirely fits. Output size shrinks
+
+13. Same convolution (no zero used) - kernel allowed to visit position where it entirely fits. Output size shrinks
+
+14. Zero padding is added to keep the size of the output equal to the size of the input.
+
+15. Full convolution - in which enough zeros are added for every pixel to be visited k times in each direction
+
+16. It can also be useful to make versions of convolution or locally connected layers in which the connectivity is further restricted, for example, to constrain each output channel 'i' to be a function of only a subset of the input channels 'l'. A common way to do this is to make the ﬁrst 'm' output channels connect to only the ﬁrst 'n' input channels, the second 'm' output channels connect to only the second 'n' input channels, and so on. Modeling interactions between a few channels allows the network to have fewer parameters, reducing memory consumption, increasing statistical eﬃciency, and reducing the amount of computation needed to perform forward and back-propagation. It accomplishes these goals without reducing the number of hidden units.
+
+17. A comparison of locally connected layers, tiled convolution, and standard convolution.
+
+18. The general idea is to assume that large groups of contiguous pixels tend to be associated with the same label. Graphical models can describe the probabilistic relationships between neighboring pixels. Alternatively, the convolutional network can be trained to maximize an approximation of the graphical model training objective.
+
+19. One advantage to convolutional networks is that they can also process inputs with varying spatial extents. These kinds of input simply cannot be represented by traditional, matrix multiplication-based neural networks. This provides a compelling reason to use convolutional networks even when computational cost and overﬁtting are not signiﬁcant issues.
+
+20. Models with high capacity can simply memorize the training set. In many cases, empirical risk minimization is not really feasible. The most eﬀective modern optimization algorithms are based on gradient descent, but many useful loss functions, such as 0-1 loss, have no useful derivatives (the derivative is either zero or undeﬁned everywhere).
+
+21. Surrogate loss function - acts as a proxy but has advantages. For example, the negative log-likelihood of the correct class is typically used as a surrogate for the 0-1 loss. The negative log-likelihood allows the model to estimate the conditional probability of the classes, given the input, and if the model can do that well, then it can pick the classes that yield the least classiﬁcation error in expectation. Training often halts while the surrogate loss function still has large derivatives, which is very diﬀerent from the pure optimization setting, where an optimization algorithm is considered to have converged when the gradient becomes very small.
+
+22. Optimization algorithms that use the entire training set are called batch or deterministic gradient methods because they process all the training examples simultaneously in a large batch. Optimization algorithms that use only a single example at a time are sometimes called stochastic and sometimes online methods. The term “online” is usually reserved for when the examples are drawn from a stream of continually created examples rather than from a ﬁxed-size training set over which several passes are made.
+
+23. If the Hessian matrix has a poor condition number, the gradient along the eigenvector with the largest eigenvalue λmax is much smaller than the one with the smallest eigenvalue. Gradient descent methods work poorly if the gradients in different directions are in different orders of magnitude.
+
+24. In practice it is usually suﬃcient to shuﬄe the order of the dataset once and then store it in a shuﬄed fashion. This will impose a ﬁxed set of possible mini-batches of consecutive examples that all models trained thereafter will use, and each individual model will be forced to reuse this ordering every time it passes through the training data. This deviation from true random selection does not seem to have a significant detrimental effect. Failing to ever shuﬄe the examples in any way can seriously reduce the eﬀectiveness of the algorithm.
+
+25. Traditionally, machine learning has avoided the diﬃculty of general optimization by carefully designing the objective function and constraints to ensure that the optimization problem is convex. When training neural networks, we must confront the general non-convex case. Even convex optimization is not without its complications.
+
+26. Ill-conditioning can manifest by causing SGD to get “stuck” in the sense that even very small steps increase the cost function.
+
+27. Neural networks and any models with multiple equivalently parametrized latent variables all have multiple local minima because of the model identiﬁability problem. A model is said to be identiﬁable if a suﬃciently large training set can rule out all but one setting of the model’s parameters.
+
+28. Maxout network - The Maxout Unit is a generalization of the ReLU and the leaky ReLU functions. It is a piecewise linear function that returns the maximum of the inputs, designed to be used in conjunction with dropout. Both ReLU and leaky ReLU are special cases of Maxout. The main drawback of Maxout is that it is computationally expensive as it doubles the number of parameters for each neuron.
+
+29. For many high-dimensional nonconvex functions, local minima (and maxima) are in fact rare compared to another kind of point with zero gradients: a saddlepoint. Some points around a saddle point have a greater cost than the saddle point, while others have a lower cost. At a saddle point, the Hessian matrix has both positive and negative eigenvalues.
+
+30. Many classes of random functions exhibit the following behavior: in low-dimensional spaces, local minima are common. In higher-dimensional spaces, local minima are rare, and saddle points are more common.
+
+31. Gradient descent is designed to move “downhill” and is not explicitly designed to seek a critical point. Newton’s method, however, is designed to solve for a point where the gradient is zero. Without appropriate modiﬁcation, it can jump to a saddle point.
+
+32. There are other kinds of points with zero gradients besides minima and saddle points. Maxima is much like saddle points from the perspective of optimization—many algorithms are not attracted to them, but unmodiﬁed Newton’s method is. Maxima of many classes of random functions become exponentially rare in high-dimensional space, just as minima do.
+
+33. In a convex problem, a wide, ﬂat region must consist entirely of global minima, but in a general optimization problem, such a region could correspond to a high value of the objective function
+
+34. Vanishing gradients make it diﬃcult to know which direction the parameters should move to improve the cost function while exploding gradients can make learning unstable.
+
+35. While stochastic gradient descent remains a popular optimization strategy, learning with it can sometimes be slow. The momentum algorithm accumulates an exponentially decaying moving average of past gradients and continues to move in their direction. Momentum aims primarily to solve two problems: poor conditioning of the Hessian matrix and variance in the stochastic gradient. The momentum algorithm introduces a variable that plays the role of velocity—it is the direction and speed at which the parameters move through parameter.
+
+36. Poorly conditioned Hessian matrix - If the Hessian matrix has a poor condition number, the gradient along the eigenvector with the largest eigenvalue λmax is much smaller than the one with the smallest eigenvalue. Gradient descent methods work poorly if the gradients in different directions are in different orders of magnitude.
+
+37. Viscous drag - it is weak enough that the gradient can continue to cause motion until a minimum is reached but strong enough to prevent motion if the gradient does not justify moving.
+
+38. It is usually best to initialize each unit to compute a diﬀerent function from all the other units. This may help to make sure that no input patterns are lost in the null space of forward propagation and that no gradient patterns are lost in the null space of backpropagation. The goal of having each unit compute a diﬀerent function motivates random initialization of the parameters.
+
+39. Larger initial weights will yield a stronger symmetry-breaking eﬀect, helping to avoid redundant units. They also help to avoid losing signal during forward or back-propagation through the linear component of each layer—larger values in the matrix result in larger outputs of matrix multiplication. Initial weights that are too large may, however, result in exploding values during forward propagation or back-propagation.
+
+40. Neural network researchers have long realized that the learning rate is reliably one of the most diﬃcult to set hyperparameters because it signiﬁcantly aﬀects model performance.
+
+41. The delta-bar-delta algorithm is an early heuristic approach to adapting individual learning rates for model parameters during training. The approach is based on a simple idea: if the partial derivative of the loss, with respect to a given model parameter, remains the same sign, then the learning rate should increase. If that partial derivative changes sign, then the learning rate should decrease. Of course, this kind of rule can only be applied to full batch optimization.
+
+42. Empirically, RMSProp has been shown to be an eﬀective and practical optimization algorithm for deep neural networks. It is currently one of the go-to optimization methods being employed routinely by deep learning practitioners.
+
+43. The Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm attempts to bring some of the advantages of Newton’s method without the computational burden. In that respect, BFGS is similar to the conjugate gradient method. However, BFGS takes a more direct approach to the approximation of Newton’s update. Relative to conjugate gradients, BFGS has the advantage that it can spend less time reﬁning each line search. Limited Memory BFGS (or L-BFGS) - The memory costs of the BFGS algorithm can be signiﬁcantly decreased by avoiding storing the complete inverse Hessian approximation M.
+
+44. Batch normalization has made models signiﬁcantly easier to learn. The ease of learning of course comes at the cost of making the lower layers useless.
+
+45. In a deep neural network with non-linear activation functions, the lower layers can perform nonlinear transformations of the data, so they remain useful. Batch normalization acts to standardize only the mean and variance of each unit in order to stabilize learning, but it allows the relationships between units and the nonlinear statistics of a single unit to change.
+
+46. Because the ﬁnal layer of the network is able to learn a linear transformation, we may actually wish to remove all linear relationships between units within a layer. Unfortunately, eliminating all linear interactions is much more expensive than standardizing the mean and standard deviation of each individual unit, and so far batch normalization remains the most practical approach.
+
+47. In convolutional networks, it is important to apply the same normalizing µ and σ at every spatial location within a feature map, so that the statistics of the feature map remain the same regardless of spatial location.
