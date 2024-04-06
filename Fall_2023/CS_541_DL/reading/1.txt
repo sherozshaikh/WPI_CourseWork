@@ -1,0 +1,14 @@
+Reading 1 - DL book - Chapters 3 & 5
+
+https://www.deeplearningbook.org/
+
+
+After going through the referred chapters, I got to revise a lot of concepts within the domain of Probability theory.
+
+The section gives a good definition for key terms such as probability mass function, and probability density function, and a much clearer definition for common probability distributions such as Multinoulli vs multinomial, exponential distribution vs Laplace distribution, Dirac delta function, GMM, Shannon entropy and (KL) divergence. Later on, the book clearly outlines the directed and undirected models under the graphical model (structured probabilistic model).
+
+I found the Chain Rule (or Product rule) of Conditional Probabilities and Gaussian Distribution to be the most powerful as the former helps decompose joint probability distribution over many random variables into conditional distributions over only one variable which makes the evaluation of the random variable more efficacious and the later is a good sensible choice for many applications in the absence of prior knowledge about what form a distribution over the real numbers should take, CLT (central limit theorem) shows that the sum of many independent random variables is approximately normally distributed and the normal distribution encodes the maximum amount of uncertainty over the real numbers. Can be thought of as the one that inserts the least amount of prior knowledge into a model.
+
+Moving forward with the ML review the section gives a good definition for key terms such as different kinds of Learning Algorithms, design matrix, VC (Vapnik-Chervonenkis) dimension, representational capacity of the model, parameters, weights, bias, overfitting, underfitting, generalization error (test error), generalization gap, regularization, cross-validation, and a detailed view of maximum likelihood (minimization of the negative log-likelihood (NLL)) and frequentist perspective vs Bayesian statistics.
+
+I found Cross Validation to be the most powerful tool as while I was working on projects in my former company we used to create a sample dataset from the population after EDA and test run a few models against it to get a sense of the stack architecture that can be built for the same. Additionally, the maximum likelihood being used to estimate conditional probability is powerful as it forms the basis for most supervised learning algorithms.
