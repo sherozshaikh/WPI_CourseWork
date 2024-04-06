@@ -38,6 +38,8 @@
     - Assignment1/
     - Assignment2/
     - ...
+```
+
 
 ### Repository Structure
 
@@ -48,4 +50,3 @@
       - [John_AI_534_Homework_Assignment_1.pdf](Fall_2023/CS_534_AI/assignments/1/John_AI_534_Homework_Assignment_1.pdf)
       - [John_AI_534_Homework_Assignment_1.py](Fall_2023/CS_534_AI/assignments/1/John_AI_534_Homework_Assignment_1.py)
 
-```
