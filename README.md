@@ -27,26 +27,141 @@
 - **Statistics**
 
 ### Repository Structure
-```markdown
-### Repository Structure
-- Assignments/
-  - Fall_2023/
-    - Assignment1/
-    - Assignment2/
-    - ...
-  - Spring_2024/
-    - Assignment1/
-    - Assignment2/
-    - ...
-```
-
-
-### Repository Structure
-
-#### Fall 2023
-- **CS 534 - Artificial Intelligence (AI)**
-  - **Assignments**
-    - **1**
-      - [John_AI_534_Homework_Assignment_1.pdf](Fall_2023/CS_534_AI/assignments/1/John_AI_534_Homework_Assignment_1.pdf)
-      - [John_AI_534_Homework_Assignment_1.py](Fall_2023/CS_534_AI/assignments/1/John_AI_534_Homework_Assignment_1.py)
-
+- **Fall_2023**/
+  - **CS_534_AI**/
+    - **assignments**/
+      - **1**/
+        - Sheroz_AI_534_Homework_Assignment_1.pdf
+        - Sheroz_AI_534_Homework_Assignment_1.py
+      - **2**/
+        - RomaniaCityApp.py
+        - SimpleProblemSolvingAgent.py
+      - **3**/
+        - TicTacToeClass.py
+        - TicTacToeGameApp.py
+      - **4**/
+        - **Sheroz_AI_534_Homework_Assignment_P1**/
+          - 1.png
+          - 10.png
+          - 2.png
+          - 3.png
+          - 4.png
+          - 5.png
+          - 6.png
+          - 7.png
+          - 8.png
+          - 9.png
+          - MachineFailurePredictorPipeline.py
+          - ai4i2020.csv
+          - pb1_x_test.npy
+          - pb1_x_train.npy
+          - pb1_y_test.npy
+          - pb1_y_train.npy
+        - **Sheroz_AI_534_Homework_Assignment_P2**/
+          - AlexNetPredictorPipeline.py
+          - Screenshot 2023-12-01 at 7.05.20 AM.png
+          - Screenshot 2023-12-01 at 7.18.27 AM.png
+          - complete_mednode_dataset
+          - melanoma.zip
+          - naevus.zip
+          - testset.zip
+          - trainset.zip
+  - **CS_541_DL**/
+    - **assignments**/
+      - **1**/
+        - Sheroz_DL_541_Homework_Assignment_1.pdf
+      - **2**/
+        - Sheroz_DL_541_Homework_Assignment_2.pdf
+      - **3**/
+        - Sheroz_DL_541_Homework_Assignment_3.pdf
+      - **4**/
+        - Sheroz_DL_541_Homework_Assignment_4.pdf
+        - Sheroz_DL_541_Homework_Assignment_4.py
+      - **5**/
+        - Sheroz_DL_541_Homework_Assignment_5.pdf
+        - Sheroz_DL_541_Homework_Assignment_5.py
+      - **6**/
+        - Sheroz_DL_541_Homework_Assignment_6.pdf
+        - Sheroz_DL_541_Homework_Assignment_6.py
+    - **reading**/
+      - 1.txt
+      - 2.txt
+      - 3.txt
+      - 4.txt
+  - **CS_547_IR**/
+    - **assignments**/
+      - **1**/
+        - Sheroz_IR_547_Homework_Assignment_1.py
+      - **2**/
+        - Sheroz_IR_547_Homework_Assignment_2.pdf
+        - Sheroz_IR_547_Homework_Assignment_2.py
+      - **3**/
+        - Sheroz_IR_547_Homework_Assignment_3.py
+      - **4**/
+        - Sheroz_IR_547_Homework_Assignment_4.ipynb
+  - **CS_548_KDDM**/
+    - **assignments**/
+      - **1**/
+        - Sheroz_KDDM_548_Homework_Assignment_1.ipynb
+        - Sheroz_KDDM_548_Homework_Assignment_1.pdf
+- **Spring_2024**/
+  - **DS_502_STATS**/
+    - **assignments**/
+      - **1**/
+        - Sheroz_STATS_502_Homework_Assignment_1.R
+        - Sheroz_STATS_502_Homework_Assignment_1.pdf
+      - **2**/
+        - Sheroz_STATS_502_Homework_Assignment_2.R
+        - Sheroz_STATS_502_Homework_Assignment_2.pdf
+      - **3**/
+        - Sheroz_STATS_502_Homework_Assignment_3.R
+        - Sheroz_STATS_502_Homework_Assignment_3.pdf
+      - **4**/
+        - Sheroz_STATS_502_Homework_Assignment_4.ipynb
+        - Sheroz_STATS_502_Homework_Assignment_4.pdf
+  - **DS_595_NLP**/
+    - **assignments**/
+      - **1**/
+        - Detection_of_Online_Fake_News_Using_N-Gram_Analysis_and_Machine_Learning_Techniques.pdf
+        - Sheroz_NLP_595_Homework_Assignment_1.ipynb
+        - Sheroz_NLP_595_Homework_Assignment_1.pdf
+        - Supervised_Learning_for_Fake_News_Detection.pdf
+      - **2**/
+        - Sheroz_NLP_595_Homework_Assignment_2.ipynb
+        - Sheroz_NLP_595_Homework_Assignment_2.pdf
+        - Sheroz_NLP_595_Homework_Assignment_2_Summary.csv
+  - **MIS_584_BI**/
+    - **assignments**/
+      - **1**/
+        - Customers_Cleaned.csv
+        - Customers_Cleaned.xlsx
+        - Sheroz_MIS_584_Homework_Assignment_1.docx
+        - Sheroz_MIS_584_Homework_Assignment_1.tflx
+      - **2**/
+        - Dataset_Vending Machines.xlsx
+        - Sheroz_MIS_584_Homework_Assignment_2.pdf
+      - **3**/
+        - Sheroz_MIS_584_Homework_Assignment_3.pdf
+        - Sheroz_MIS_584_Homework_Assignment_3.twbx
+        - Video Games_Sales (2013-2018).xlsx
+      - **4**/
+        - Sheroz_MIS_584_Homework_Assignment_4.pdf
+        - Sheroz_MIS_584_Homework_Assignment_4.twbx
+      - **5**/
+        - Sheroz_MIS_584_Homework_Assignment_5.pdf
+        - Sheroz_MIS_584_Homework_Assignment_5.twbx
+      - **6**/
+        - Dataset_HR Performance.xlsx
+        - Sheroz_MIS_584_Homework_Assignment_6.pdf
+        - Sheroz_MIS_584_Homework_Assignment_6.twbx
+      - **7**/
+        - Sheroz_MIS_584_Homework_Assignment_7.pdf
+        - Sheroz_MIS_584_Homework_Assignment_7.twbx
+        - Wholesale customers.xlsx
+      - **8**/
+        - Sheroz_MIS_584_Homework_Assignment_8.pdf
+        - Sheroz_MIS_584_Homework_Assignment_8.xlsx
+      - **9**/
+        - Sheroz_MIS_584_Homework_Assignment_9.pdf
+        - Sheroz_MIS_584_Homework_Assignment_9.twbx
+        - Sheroz_MIS_584_Homework_Assignment_9_R&D.twbx
