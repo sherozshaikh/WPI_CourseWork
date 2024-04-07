@@ -59,8 +59,8 @@
           - [pb1_y_train.npy](Fall_2023/CS_534_AI/assignments/4/Sheroz_AI_534_Homework_Assignment_P1/pb1_y_train.npy)
         - **Sheroz_AI_534_Homework_Assignment_P2**/
           - [AlexNetPredictorPipeline.py](Fall_2023/CS_534_AI/assignments/4/Sheroz_AI_534_Homework_Assignment_P2/AlexNetPredictorPipeline.py)
-          - [Screenshot 2023-12-01 at 7.05.20 AM.png](Fall_2023/CS_534_AI/assignments/4/Sheroz_AI_534_Homework_Assignment_P2/Screenshot 2023-12-01 at 7.05.20 AM.png)
-          - [Screenshot 2023-12-01 at 7.18.27 AM.png](Fall_2023/CS_534_AI/assignments/4/Sheroz_AI_534_Homework_Assignment_P2/Screenshot 2023-12-01 at 7.18.27 AM.png)
+          - ![Screenshot 2023-12-01 at 7.05.20 AM.png](Fall_2023/CS_534_AI/assignments/4/Sheroz_AI_534_Homework_Assignment_P2/Screenshot%202023-12-01%20at%207.05.20%20AM.png)
+          - ![Screenshot 2023-12-01 at 7.18.27 AM.png](Fall_2023/CS_534_AI/assignments/4/Sheroz_AI_534_Homework_Assignment_P2/Screenshot%202023-12-01%20at%207.18.27%20AM.png)
           - [complete_mednode_dataset](Fall_2023/CS_534_AI/assignments/4/Sheroz_AI_534_Homework_Assignment_P2/complete_mednode_dataset)
           - [melanoma.zip](Fall_2023/CS_534_AI/assignments/4/Sheroz_AI_534_Homework_Assignment_P2/melanoma.zip)
           - [naevus.zip](Fall_2023/CS_534_AI/assignments/4/Sheroz_AI_534_Homework_Assignment_P2/naevus.zip)
