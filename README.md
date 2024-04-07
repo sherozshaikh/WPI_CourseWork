@@ -143,12 +143,12 @@
         - [Sheroz_MIS_584_Homework_Assignment_1.docx](Spring_2024/MIS_584_BI/assignments/1/Sheroz_MIS_584_Homework_Assignment_1.docx)
         - [Sheroz_MIS_584_Homework_Assignment_1.tflx](Spring_2024/MIS_584_BI/assignments/1/Sheroz_MIS_584_Homework_Assignment_1.tflx)
       - **2**/
-        - [Dataset_Vending Machines.xlsx](Spring_2024/MIS_584_BI/assignments/2/Dataset_Vending Machines.xlsx)
+        - [Dataset_Vending Machines.xlsx](Spring_2024/MIS_584_BI/assignments/2/Dataset_Vending%20Machines.xlsx)
         - [Sheroz_MIS_584_Homework_Assignment_2.pdf](Spring_2024/MIS_584_BI/assignments/2/Sheroz_MIS_584_Homework_Assignment_2.pdf)
       - **3**/
         - [Sheroz_MIS_584_Homework_Assignment_3.pdf](Spring_2024/MIS_584_BI/assignments/3/Sheroz_MIS_584_Homework_Assignment_3.pdf)
         - [Sheroz_MIS_584_Homework_Assignment_3.twbx](Spring_2024/MIS_584_BI/assignments/3/Sheroz_MIS_584_Homework_Assignment_3.twbx)
-        - [Video Games_Sales (2013-2018).xlsx](Spring_2024/MIS_584_BI/assignments/3/Video Games_Sales (2013-2018).xlsx)
+        - [Video Games_Sales (2013-2018).xlsx](Spring_2024/MIS_584_BI/assignments/3/Video%20Games_Sales%20(2013-2018).xlsx)
       - **4**/
         - [Sheroz_MIS_584_Homework_Assignment_4.pdf](Spring_2024/MIS_584_BI/assignments/4/Sheroz_MIS_584_Homework_Assignment_4.pdf)
         - [Sheroz_MIS_584_Homework_Assignment_4.twbx](Spring_2024/MIS_584_BI/assignments/4/Sheroz_MIS_584_Homework_Assignment_4.twbx)
@@ -156,13 +156,13 @@
         - [Sheroz_MIS_584_Homework_Assignment_5.pdf](Spring_2024/MIS_584_BI/assignments/5/Sheroz_MIS_584_Homework_Assignment_5.pdf)
         - [Sheroz_MIS_584_Homework_Assignment_5.twbx](Spring_2024/MIS_584_BI/assignments/5/Sheroz_MIS_584_Homework_Assignment_5.twbx)
       - **6**/
-        - [Dataset_HR Performance.xlsx](Spring_2024/MIS_584_BI/assignments/6/Dataset_HR Performance.xlsx)
+        - [Dataset_HR Performance.xlsx](Spring_2024/MIS_584_BI/assignments/6/Dataset_HR%20Performance.xlsx)
         - [Sheroz_MIS_584_Homework_Assignment_6.pdf](Spring_2024/MIS_584_BI/assignments/6/Sheroz_MIS_584_Homework_Assignment_6.pdf)
         - [Sheroz_MIS_584_Homework_Assignment_6.twbx](Spring_2024/MIS_584_BI/assignments/6/Sheroz_MIS_584_Homework_Assignment_6.twbx)
       - **7**/
         - [Sheroz_MIS_584_Homework_Assignment_7.pdf](Spring_2024/MIS_584_BI/assignments/7/Sheroz_MIS_584_Homework_Assignment_7.pdf)
         - [Sheroz_MIS_584_Homework_Assignment_7.twbx](Spring_2024/MIS_584_BI/assignments/7/Sheroz_MIS_584_Homework_Assignment_7.twbx)
-        - [Wholesale customers.xlsx](Spring_2024/MIS_584_BI/assignments/7/Wholesale customers.xlsx)
+        - [Wholesale customers.xlsx](Spring_2024/MIS_584_BI/assignments/7/Wholesale%20customers.xlsx)
       - **8**/
         - [Sheroz_MIS_584_Homework_Assignment_8.pdf](Spring_2024/MIS_584_BI/assignments/8/Sheroz_MIS_584_Homework_Assignment_8.pdf)
         - [Sheroz_MIS_584_Homework_Assignment_8.xlsx](Spring_2024/MIS_584_BI/assignments/8/Sheroz_MIS_584_Homework_Assignment_8.xlsx)
