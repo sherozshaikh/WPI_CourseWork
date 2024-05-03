@@ -127,7 +127,7 @@ A structured overview of the repository's contents to guide you through the code
       - **4**/
         - [Sheroz_STATS_502_Homework_Assignment_4.ipynb](Spring_2024/DS_502_STATS/assignments/4/Sheroz_STATS_502_Homework_Assignment_4.ipynb)
         - [Sheroz_STATS_502_Homework_Assignment_4.pdf](Spring_2024/DS_502_STATS/assignments/4/Sheroz_STATS_502_Homework_Assignment_4.pdf)
-      - **4**/
+      - **5**/
         - [Sheroz_STATS_502_Homework_Assignment_5.ipynb](Spring_2024/DS_502_STATS/assignments/5/Sheroz_STATS_502_Homework_Assignment_5.ipynb)
         - [Sheroz_STATS_502_Homework_Assignment_5.pdf](Spring_2024/DS_502_STATS/assignments/5/Sheroz_STATS_502_Homework_Assignment_5.pdf)
   - **DS_595_NLP**/
