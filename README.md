@@ -127,6 +127,9 @@ A structured overview of the repository's contents to guide you through the code
       - **4**/
         - [Sheroz_STATS_502_Homework_Assignment_4.ipynb](Spring_2024/DS_502_STATS/assignments/4/Sheroz_STATS_502_Homework_Assignment_4.ipynb)
         - [Sheroz_STATS_502_Homework_Assignment_4.pdf](Spring_2024/DS_502_STATS/assignments/4/Sheroz_STATS_502_Homework_Assignment_4.pdf)
+      - **4**/
+        - [Sheroz_STATS_502_Homework_Assignment_5.ipynb](Spring_2024/DS_502_STATS/assignments/5/Sheroz_STATS_502_Homework_Assignment_5.ipynb)
+        - [Sheroz_STATS_502_Homework_Assignment_5.pdf](Spring_2024/DS_502_STATS/assignments/5/Sheroz_STATS_502_Homework_Assignment_5.pdf)
   - **DS_595_NLP**/
     - **assignments**/
       - **1**/
@@ -138,6 +141,9 @@ A structured overview of the repository's contents to guide you through the code
         - [Sheroz_NLP_595_Homework_Assignment_2.ipynb](Spring_2024/DS_595_NLP/assignments/2/Sheroz_NLP_595_Homework_Assignment_2.ipynb)
         - [Sheroz_NLP_595_Homework_Assignment_2.pdf](Spring_2024/DS_595_NLP/assignments/2/Sheroz_NLP_595_Homework_Assignment_2.pdf)
         - [Sheroz_NLP_595_Homework_Assignment_2_Summary.csv](Spring_2024/DS_595_NLP/assignments/2/Sheroz_NLP_595_Homework_Assignment_2_Summary.csv)
+      - **3**/
+        - [Sheroz_NLP_595_Homework_Assignment_3.ipynb](Spring_2024/DS_595_NLP/assignments/3/Sheroz_NLP_595_Homework_Assignment_3.ipynb)
+        - [Sheroz_NLP_595_Homework_Assignment_3.pdf](Spring_2024/DS_595_NLP/assignments/3/Sheroz_NLP_595_Homework_Assignment_3.pdf)
   - **MIS_584_BI**/
     - **assignments**/
       - **1**/
