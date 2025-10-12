@@ -1,7 +1,8 @@
 # 🎓 University Details
 - **University Name:** Worcester Polytechnic Institute (WPI)
 - **Location:** Worcester, MA, USA
-- **Duration:** Aug 2023 - Present
+- **Duration:** Aug 2023 - May 2025
+- - **Grade:** 3.9 / 4.0
 
 ## 📘 Course Details
 - **Program:** M.S. Data Science
